@@ -63,12 +63,12 @@ model.compile(optimizer=apt, loss='mse')
 # print(X_train.shape[0],X_test.shape[1])
 
 callback = EarlyStopping(monitor='val_loss', patience=10,verbose=1,mode='auto')
-history = model.fit(X_train,y_train, epochs = 10, validation_data=(X_test,y_test),shuffle=False,callbacks =[callback])
+history = model.fit(X_train,y_train, epochs = 300, validation_data=(X_test,y_test),shuffle=False,callbacks =[callback])
 
 
 predictions = model.predict([X_test])
-print(predictions)
+print(predictions[0])
 print(y_test[0])
-# plt.plot(np.array(predictions))
+plt.plot(np.array(predictions))
 plt.plot(y_test)
-plt.show
+plt.show()
