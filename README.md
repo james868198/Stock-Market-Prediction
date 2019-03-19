@@ -1,7 +1,9 @@
 # Stock-Market-Prediction
 
-tools:
-Python 3.7
-jupyter notebook
-TensorFlow.kersa
+Program Language:           
+Python                      3.6
 
+Libraries:                      
+jupyter notebook            1.0.0
+TensorFlow                  1.12.0 
+scikit-learn                0.20.3
